@@ -78,6 +78,7 @@ class Worker implements Runnable
       z = 2;
       x = 1;
       y = 1;
+      step = 0;
     }
   }
 
@@ -88,6 +89,6 @@ class Worker implements Runnable
 
   public synchronized String toString()
   {
-    return NAME + " Step#: " + step + " z: "+z+" x: "+x+" y: "+y;
+    return NAME + " ,Step#: " + step + " ,z: "+z+" ,x: "+x+" ,y: "+y;
   }
 }
